@@ -14,3 +14,47 @@ var formattedRole = HTMLheaderRole.replace("%data%", myRole);
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
 
+var bio = {
+"name" : "Jeremy Searls",
+"role": "Developer",
+"contact_info" : {
+  "email" : "searls@me.com",
+  "phone" : "734-645-6189",
+  "twitter" : "@jersearls"
+},
+"welcome_message" : "If you can read this, you don't need glasses",
+"picture_url" : "https://avatars0.githubusercontent.com/u/13757044?v=3&s=460",
+	"skills" : [
+		"Hadoop Ecosystem Applications",
+		"open source Data Tools",
+		"Jupyter Notebook",
+		"Anaconda",
+		"NumPy",
+		"SciPy",
+		"Apache Spark",
+		"Flume",
+		"Apache Falcon",
+		"Oozie"
+	]
+};
+
+//Example of dot notation, creates city key with kzoo value
+//bio.city = "Kalamazoo"
+//
+//same result as dot notation
+//bio["city"] = "Kalamazoo"
+
+var work = {}
+	work.position = "Technical Consultant";
+	work.employer = "Ranzal";
+	work.years = "2";
+	work.city = "Chicago";
+
+var education = {}
+	education["name"] = "MSU";
+	education["years_attended"] = "2013-2015";
+	education["city"] = "Grand Rapids";
+
+$("#main").append(work["position"]);
+$("#main").append(education.name);
+
