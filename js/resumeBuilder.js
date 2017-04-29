@@ -50,7 +50,18 @@ var work = {}
 	work.years = "2";
 	work.city = "Chicago";
 
-var education = {}
+var education = "schools": [{	{"name": "MSU",
+	"city" : "Grand Rapids",
+	"degree" : "Master of Arts",
+	"major" : "Clinical Medicine"
+	},
+	{"name": "LSSU",
+	"city" : "Sault Ste Marie",
+	"degree" : "Bachelor of Science",
+	"major" : "Fire Science"
+	}
+    ]
+}
 	education["name"] = "MSU";
 	education["years_attended"] = "2013-2015";
 	education["city"] = "Grand Rapids";
