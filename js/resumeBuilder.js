@@ -22,27 +22,48 @@ var bio = {
   ]
 };
 
+if (bio.skills.length > 0) {
+// if above is true, append or 'print' the HTMLSkillsStart to the page
+  $("#header").append(HTMLskillsStart);
+  var formattedSkill = "Jeremy Searls is a really neat fellow ";
+  $("#main").append(formattedSkill);
+}
+
+//    $("#header").append(HTMLskillsStart);
+//    var formattedSkill = HTMLskills.replace("%data%", "yoyoyo");
+//    $("#main").append(formattedSkill);
+
+
 var work = {}
   work.position = "Technical Consultant";
   work.employer = "Ranzal";
   work.years = "2";
   work.city = "Chicago";
 
-var education = "schools": [{
-  {"name": "MSU",
-  "city" : "Grand Rapids",
-  "degree" : "Master of Arts",
-  "major" : "Clinical Medicine"
-  },
-  {"name": "LSSU",
-  "city" : "Sault Ste Marie",
-  "degree" : "Bachelor of Science",
-  "major" : "Fire Science"
-  }
-]}
+var education = {
+  "schools": [
+    {"name": "MSU",
+    "city" : "Grand Rapids",
+    "degree" : "Master of Arts",
+    "major" : "Clinical Medicine"
+    },
+    {"name": "LSSU",
+    "city" : "Sault Ste Marie",
+    "degree" : "Bachelor of Science",
+    "major" : "Fire Science"
+    }
+  ]
+}
 
-$("#main").append(work["position"]);
-$("#main").append(education.name);
+for (skill in bio.skills){
+  console.log(bio.skills[skill]);
+  //$("#main").append(formattedSkill);
+}
+
+//$("#main").append(work["position"]);
+//$("#main").append(education.name);
+
+
 
 //--------------------*Junk Pile*----------------------------//
 
