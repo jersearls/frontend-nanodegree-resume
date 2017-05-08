@@ -55,10 +55,14 @@ var education = {
   ]
 }
 
-for (skill in bio.skills){
-  console.log(bio.skills[skill]);
-  //$("#main").append(formattedSkill);
+
+function printskills(array){
+  for (subarray in array){
+    console.log(array[subarray]);
+  }
 }
+
+printskills(bio.skills);
 
 //$("#main").append(work["position"]);
 //$("#main").append(education.name);
